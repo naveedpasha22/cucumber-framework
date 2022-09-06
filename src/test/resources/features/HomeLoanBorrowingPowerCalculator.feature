@@ -2,4 +2,4 @@ Feature: As a Amazon user I should be able to login and logout with valid creden
 
   Scenario: Login into the application with valid credentials
   	Given I am on the home page URL "https://www.anz.com.au/personal/home-loans/calculators-tools/much-borrow/"
-    When I fill your earnings
+    And I fill your earnings
