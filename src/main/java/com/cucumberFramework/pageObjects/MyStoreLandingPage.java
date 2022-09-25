@@ -56,8 +56,8 @@ public class MyStoreLandingPage  extends ActionEngine{
 	@FindBy(xpath="//a[text()='Faded Short Sleeve T-shirts']")
 	public WebElement lnkOrderDetails;
 	
-	@FindBy(xpath="//a[@title='Close']")
-	public WebElement lnkClose;
+	@FindBy(xpath="//h1[text()='Please choose your payment method']")
+	public WebElement txtPaymentHeader;
 	
 	
 	
@@ -96,6 +96,7 @@ public class MyStoreLandingPage  extends ActionEngine{
 	public void iVerifyOrderDetails() throws Throwable {
 		waitHelper.WaitForElement(lnkOrderDetails, 5);
 		org.testng.Assert.assertEquals(lnkOrderDetails.getText(), "Faded Short Sleeve T-shirts");
+		org.testng.Assert.assertEquals(txtPaymentHeader.getText(), "PLEASE CHOOSE YOUR PAYMENT METHOD");
 		
 	}
 
