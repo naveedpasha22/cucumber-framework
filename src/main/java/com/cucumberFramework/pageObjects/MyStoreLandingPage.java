@@ -95,7 +95,7 @@ public class MyStoreLandingPage  extends ActionEngine{
 	
 	public void iVerifyOrderDetails() throws Throwable {
 		waitHelper.WaitForElement(lnkOrderDetails, 5);
-		org.testng.Assert.assertEquals(lnkOrderDetails.getText(), "Faded Short Sleeve T-shirts]");
+		org.testng.Assert.assertEquals(lnkOrderDetails.getText(), "Faded Short Sleeve T-shirts");
 		
 	}
 
