@@ -10,7 +10,7 @@ import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
 @CucumberOptions(
-		features = "src/test/resources/features/HomeLoanBorrowingPowerCalculator.feature", 
+		features = "src/test/resources/features/MyStore.feature", 
 		glue = {"com/cucumberFramework/stepdefinitions" }, 
 		plugin = { "pretty", "html:target/cucumber-reports/cucumber-pretty",
 				"json:target/cucumber-reports/CucumberTestReport.json",

@@ -9,7 +9,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
 
-	public  static WebDriver driver;
+	public static WebDriver driver;
+	public String email;
 
 	public WebDriver selectBrowser(String browser) {
 		if (System.getProperty("os.name").toLowerCase().contains(OS.WINDOW.name().toLowerCase())) {
